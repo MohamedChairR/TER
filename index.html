@@ -5368,7 +5368,7 @@ function _asPlaySound(step) {
           // Try to lock orientation
           try { screen.orientation.lock('landscape').catch(() => { }); } catch (e) { }
         } else {
-          CL.orientation = false;
+          CL.orientation = true;
           if (warn) warn.style.display = 'block';
           if (check) check.style.display = 'none';
           if (msg) { msg.textContent = 'دوّر الشاشة أفقياً باش تكمّل'; msg.style.color = 'var(--dim)'; }
